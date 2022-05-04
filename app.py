@@ -1,5 +1,5 @@
 from flask import Flask
-from os import environ
+
 # Initializing flask app
 app = Flask(__name__)
   
@@ -24,4 +24,4 @@ def get_bag_of_dicks():
       
 # Running app
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', debug=True, port=5000)
